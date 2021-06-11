@@ -6,7 +6,7 @@ const input = require('readline-sync');
 let candidateName = "";
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question = "1) Who was the first American woman in space? ";
-let correctAnswer = "Sally Ride";
+let correctAnswer = "sally ride";
 let candidateAnswer = "";
 let questions = ["2) True or false: 5 kilometer == 5000 meters", "3) (5+3)/2*10 = ?", "4) Given the array [8, 'Orbit', 'Trajectory', 45] what entry is at index 2?", "5) What is the minimum crew size for the ISS?"];
 let correctAnswers = ["true", "40", "Trajectory", "3"];
@@ -20,19 +20,19 @@ candidateName = input.question("What is your full name?: ")
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-candidateAnswer = input.question("1) Who was the first American woman in space?")
+candidateAnswer = input.question("1) Who was the first American woman in space? ")
 console.log("Your answer: " + candidateAnswer + "\n" + " Correct Answer: Sally Ride" + "\n\n")
 
-candidateAnswer = input.question("2) True or false: 5 kilometer == 5000 meters?")
+candidateAnswers = input.question("2) True or false: 5 kilometer == 5000 meters? ")
 console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: true" + "\n\n")
 
-candidateAnswer = input.question("3) (5+3)/2*10 = ?")
+candidateAnswers = input.question("3) (5+3)/2*10 = ? ")
 console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: 40" + "\n\n")
 
-candidateAnswer = input.question("4) Given the array [8, 'Orbit', 'Trajectory', 45] what entry is at index 2?")
+candidateAnswers = input.question("4) Given the array [8, 'Orbit', 'Trajectory', 45] what entry is at index 2? ")
 console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: Trajectory" + "\n\n")
 
-candidateAnswer = input.question("5) What is the minimum crew size for the ISS?")
+candidateAnswers = input.question("5) What is the minimum crew size for the ISS? ")
 console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: 3" + "\n\n")
 
 }
