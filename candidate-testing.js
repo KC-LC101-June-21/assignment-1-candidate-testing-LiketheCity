@@ -20,28 +20,28 @@ candidateName = input.question("What is your full name?: ")
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-candidateAnswers = input.question("1) Who was the first American woman in space? ")
-collectedAnswers.push(candidateAnswers);
+collectedAnswers = input.question("1) Who was the first American woman in space? ")
+candidateAnswers.push(collectedAnswers);
 console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: Sally Ride" + "\n\n")
 
 
-candidateAnswers = input.question("2) True or false: 5 kilometer == 5000 meters? ")
-collectedAnswers.push(candidateAnswers);
+collectedAnswers = input.question("2) True or false: 5 kilometer == 5000 meters? ")
+candidateAnswers.push(collectedAnswers);
 console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: true" + "\n\n")
 
-candidateAnswers = input.question("3) (5+3)/2*10 = ? ")
-collectedAnswers.push(candidateAnswers);
+collectedAnswers = input.question("3) (5+3)/2*10 = ? ")
+candidateAnswers.push(collectedAnswers);
 console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: 40" + "\n\n")
 
-candidateAnswers = input.question("4) Given the array [8, 'Orbit', 'Trajectory', 45] what entry is at index 2? ")
-collectedAnswers.push(candidateAnswers);
+collectedAnswers = input.question("4) Given the array [8, 'Orbit', 'Trajectory', 45] what entry is at index 2? ")
+candidateAnswers.push(collectedAnswers);
 console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: Trajectory" + "\n\n")
 
-candidateAnswers = input.question("5) What is the minimum crew size for the ISS? ")
-collectedAnswers.push(candidateAnswers);
+collectedAnswers = input.question("5) What is the minimum crew size for the ISS? ")
+candidateAnswers.push(collectedAnswers);
 console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: 3" + "\n\n")
 
-console.log(collectedAnswers);
+console.log(candidateAnswers);
 }
 
 function gradeQuiz(candidateAnswers) {
