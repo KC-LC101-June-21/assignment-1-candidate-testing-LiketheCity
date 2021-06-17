@@ -22,26 +22,26 @@ function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 candidateAnswers = input.question("1) Who was the first American woman in space? ")
 collectedAnswers.push(candidateAnswers);
-console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: Sally Ride" + "\n\n")
+console.log("Your answer: " + candidateAnswers + "\n" + "Correct Answer: Sally Ride" + "\n\n")
 
 
 candidateAnswers = input.question("2) True or false: 5 kilometer == 5000 meters? ")
 collectedAnswers.push(candidateAnswers);
-console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: true" + "\n\n")
+console.log("Your answer: " + candidateAnswers + "\n" + "Correct Answer: true" + "\n\n")
 
 candidateAnswers = input.question("3) (5+3)/2*10 = ? ")
 collectedAnswers.push(candidateAnswers);
-console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: 40" + "\n\n")
+console.log("Your answer: " + candidateAnswers + "\n" + "Correct Answer: 40" + "\n\n")
 
 candidateAnswers = input.question("4) Given the array [8, 'Orbit', 'Trajectory', 45] what entry is at index 2? ")
 collectedAnswers.push(candidateAnswers);
-console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: Trajectory" + "\n\n")
+console.log("Your answer: " + candidateAnswers + "\n" + "Correct Answer: Trajectory" + "\n\n")
 
 candidateAnswers = input.question("5) What is the minimum crew size for the ISS? ")
 collectedAnswers.push(candidateAnswers);
-console.log("Your answer: " + candidateAnswers + "\n" + " Correct Answer: 3" + "\n\n")
+console.log("Your answer: " + candidateAnswers + "\n" + "Correct Answer: 3" + "\n\n")
 
-console.log(collectedAnswers);
+// console.log(collectedAnswers);
 }
 
 function gradeQuiz(candidateAnswers) {
@@ -49,7 +49,7 @@ function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   
   let totalCorrect = 0;
-  console.log(totalCorrect);
+  // console.log(totalCorrect);
 
   
 
@@ -57,7 +57,7 @@ function gradeQuiz(candidateAnswers) {
    if (collectedAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()){
      totalCorrect += 1;
    }
-    console.log(totalCorrect);
+    // console.log(totalCorrect);
   }
 
 
